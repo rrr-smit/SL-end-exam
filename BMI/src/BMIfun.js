@@ -1,10 +1,14 @@
 function calculateBmi() {
     var weight = document.bmiForm.weight.value
-    var height = document.bmiForm.height.value
+    var heightf =document.bmiForm.heightf.value
+    var heighti= document.bmiForm.heighti.value
+    var ci=heightf*12
+    var si= parseInt(ci) + parseInt(heighti);
+    var m=si * 0.0254
 
    
-    if(weight > 0 && height > 0){	
-    var finalBmi = weight/(height/100*height/100)
+    if(weight > 0 && m > 0){	
+    var finalBmi = weight/(m*m)
     document.bmiForm.bmi.value = finalBmi
     if( finalBmi < 18.5){
     document.bmiForm.meaning.value = "Underwieght."

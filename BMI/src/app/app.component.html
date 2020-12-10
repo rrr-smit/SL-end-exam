@@ -5,7 +5,8 @@
   Name: <input type="text" name="name_u" size="10"><br />
   Age: <input type="number" name="age" size="10" min="1"><br />
   Your Weight(kg): <input type="number" name="weight" size="10"><br />
-  Your Height(cm): <input type="number" name="height" size="10"> 
+  Your Height(ft.): <input type="number" name="heightf" size="10">
+  (in.): <input type="number" name="heighti" size="10">
   <p>Please select your gender:</p>
   <input type="radio" id="male" name="gender" value="male">
   <label for="male">Male</label><br>
@@ -20,9 +21,10 @@
   <label for="moderately active">Moderately active</label><br>
   <input type="radio" id="active" name="act" value="active">
   <label for="Active">Active</label>
-  <br><input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
+  <br><input type="button" value="Submit/Calculate BMI" onClick="calculateBmi()"><br />
   Your BMI: <input type="number" name="bmi" size="10"readonly><br />
   <br>This Means: <input type="text" name="meaning" size="25"readonly ><br />
+  
   <input type="reset" value="Reset" />
   </form>
   </body>
